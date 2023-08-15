@@ -4,19 +4,21 @@
 studmod studrec(){
     int id,mod_id;
     string fn,dob,bg,add;
+    cout<<"\n-------------------------------------------------";
     cout<<"\nEnter the following details: \n";
     cout<<"\nUSE THE CORRECT INPUT OR THE SYSTEM WILL EXIT";
-    cout<<"\nEnter Student ID: ";
+    cout<<"\n-------------------------------------------------";
+    cout<<"\nEnter Student ID (INTEGER): ";
     cin>>id;
-    cout<<"\nEnter first name: ";
+    cout<<"\nEnter first name (STRING): ";
     cin>>fn;
-    cout<<"\nEnter dob(DD-MM-YY): ";
+    cout<<"\nEnter dob(DD-MM-YY / STRING): ";
     cin>>dob;
-    cout<<"\nEnter Module ID: ";
+    cout<<"\nEnter Module ID (INTEGER): ";
     cin>>mod_id;
-    cout<<"\nEnter Blood group: ";
+    cout<<"\nEnter Blood group (STRING): ";
     cin>>bg;
-    cout<<"\nEnter Address: ";
+    cout<<"\nEnter Address (STRING): ";
     cin>>add;
     studmod x=studmod(id,fn,dob,mod_id,bg,add);
     return x;
@@ -54,40 +56,52 @@ void studup(studmod& x){
     }
         switch(chk){
             case 1:
-                cout<<"\nEnter NEW NAME: ";
+            cout<<"\n-------------------------------------------------";
+                cout<<"\nEnter NEW NAME (STRING): ";
                 cin>>n;
                 x.setStudentName(n);
                 cout<<"\nUPDATED..";
+                cout<<"\n-------------------------------------------------";
                 break;
             case 2:
-                cout<<"\nEnter NEW DOB: ";
+            cout<<"\n-------------------------------------------------";
+                cout<<"\nEnter NEW DOB (STRING): ";
                 cin>>dob;
                 x.setDateOfBirth(dob);
                 cout<<"\nUPDATED..";
+                cout<<"\n-------------------------------------------------";
                 break;
             case 3:
-                cout<<"\nEnter NEW MODULE ID: ";
+            cout<<"\n-------------------------------------------------";
+                cout<<"\nEnter NEW MODULE ID (INTEGER): ";
                 cin>>mid;
                 x.setModuleID(mid);
                 cout<<"\nUPDATED..";
+                cout<<"\n-------------------------------------------------";
                 break;
             case 4:
-                cout<<"\nEnter NEW BLOOD GROUP: ";
+            cout<<"\n-------------------------------------------------";
+                cout<<"\nEnter NEW BLOOD GROUP (STRING): ";
                 cin>>bg;
                 x.setBloodGroup(bg);
                 cout<<"\nUPDATED..";
+                cout<<"\n-------------------------------------------------";
                 break;
             case 5:
-                cout<<"\nEnter NEW ADDRESS: ";
+            cout<<"\n-------------------------------------------------";
+                cout<<"\nEnter NEW ADDRESS (STRING): ";
                 cin>>add;
                 x.setadd(add);
                 cout<<"\nUPDATED..";
+                cout<<"\n-------------------------------------------------";
                 break;
             case 6:
+            cout<<"\n-------------------------------------------------";
                 cout<<"Going back to Menu..";
                 break;
             default:
                 cout<<"Wrong input..";
+                cout<<"\n-------------------------------------------------";
                 break;
         }
 }

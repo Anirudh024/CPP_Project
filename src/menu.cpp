@@ -55,8 +55,13 @@ int main(){
                 cout<<"\nUSE THE CORRECT INPUT OR THE SYSTEM WILL EXIT";
                 cout<<"\nEnter the Student ID: ";
                 cin>>id;
+                    if(s1.find(x.getStudentId())==s1.end()){
+                    cout<<"\nStudent record not found..\n";
+                }
+                else{
                     studup(s1[id]);
-                cout<<"\nUpdated Student Record..";
+                cout<<"\nUpdated Module Record..";
+                }
                 break;
             case 3:
                 i=0;
@@ -93,8 +98,14 @@ int main(){
                 cout<<"\nUSE THE CORRECT INPUT OR THE SYSTEM WILL EXIT";
                 cout<<"\nEnter the Module ID: ";
                 cin>>id;
+                if(m1.find(y.getModuleID())==m1.end()){
+                    cout<<"\nModule not found..\n";
+                }
+                else{
                     modup(m1[id]);
                 cout<<"\nUpdated Module Record..";
+                }
+                    
                 break;
             case 0:
                 cout<<"\nExitting...";

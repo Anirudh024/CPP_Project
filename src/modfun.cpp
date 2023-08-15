@@ -4,17 +4,19 @@
 mod modrec(){
     int mod_id,dur,fees;
     string n,ttd;
+    cout<<"\n-------------------------------------------------";
     cout<<"\nEnter the following details: \n";
     cout<<"\nUSE THE CORRECT INPUT OR THE SYSTEM WILL EXIT";
-    cout<<"\nEnter Module ID: ";
+    cout<<"\n-------------------------------------------------";
+    cout<<"\nEnter Module ID (INTEGER): ";
     cin>>mod_id;
-    cout<<"\nEnter Module name: ";
+    cout<<"\nEnter Module name (STRING): ";
     cin>>n;
-    cout<<"\nEnter Module Duration(Days): ";
+    cout<<"\nEnter Module Duration(Days/INTEGER): ";
     cin>>dur;
-    cout<<"\nEnter Module Fees: ";
+    cout<<"\nEnter Module Fees (INTEGER): ";
     cin>>fees;
-    cout<<"\nEnter Module Tentative Start Date: ";
+    cout<<"\nEnter Module Tentative Start Date (STRING): ";
     cin>>ttd;
     mod x = mod(mod_id,n,dur,fees,ttd);
     return x;
@@ -49,34 +51,44 @@ void modup(mod& y){
     }
         switch(chk){
             case 1:
-                cout<<"\nEnter NEW MODULE NAME: ";
+            cout<<"\n-------------------------------------------------";
+                cout<<"\nEnter NEW MODULE NAME (STRING): ";
                 cin>>n;
                 y.setModuleName(n);
                 cout<<"\nUPDATED..";
+                cout<<"\n-------------------------------------------------";
                 break;
             case 2:
-                cout<<"\nEnter NEW DURATION: ";
+            cout<<"\n-------------------------------------------------";
+                cout<<"\nEnter NEW DURATION (INTEGER): ";
                 cin>>dur;
                 y.setDuration(dur);
                 cout<<"\nUPDATED..";
+                cout<<"\n-------------------------------------------------";
                 break;
             case 3:
-                cout<<"\nEnter NEW FEES: ";
+            cout<<"\n-------------------------------------------------";
+                cout<<"\nEnter NEW FEES (INTEGER): ";
                 cin>>fee;
                 y.setFees(fee);
                 cout<<"\nUPDATED..";
+                cout<<"\n-------------------------------------------------";
                 break;
             case 4:
-                cout<<"\nEnter NEW TENTATIVE START DATE: ";
+            cout<<"\n-------------------------------------------------";
+                cout<<"\nEnter NEW TENTATIVE START DATE (STRING): ";
                 cin>>ttd;
                 y.setttd(ttd);
                 cout<<"\nUPDATED..";
+                cout<<"\n-------------------------------------------------";
                 break;
             case 5:
+            cout<<"\n-------------------------------------------------";
                 cout<<"Going back to Menu..";
                 break;
             default:
                 cout<<"Wrong input..";
+                cout<<"\n-------------------------------------------------";
                 break;
         }
 }
