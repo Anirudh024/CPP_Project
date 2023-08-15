@@ -1,5 +1,5 @@
 # CPP_Project
- The registration code for both student and moduls
+ The registration code for both student and modules
  It includes:
   1. Adding student records
   2. Adding modules
