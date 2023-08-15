@@ -55,7 +55,7 @@ int main(){
                 cout<<"\nUSE THE CORRECT INPUT OR THE SYSTEM WILL EXIT";
                 cout<<"\nEnter the Student ID: ";
                 cin>>id;
-                    if(s1.find(x.getStudentId())==s1.end()){
+                if(s1.find(id)==s1.end()){
                     cout<<"\nStudent record not found..\n";
                 }
                 else{
@@ -98,7 +98,7 @@ int main(){
                 cout<<"\nUSE THE CORRECT INPUT OR THE SYSTEM WILL EXIT";
                 cout<<"\nEnter the Module ID: ";
                 cin>>id;
-                if(m1.find(y.getModuleID())==m1.end()){
+                if(m1.find(id)==m1.end()){
                     cout<<"\nModule not found..\n";
                 }
                 else{
