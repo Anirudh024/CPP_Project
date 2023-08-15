@@ -97,7 +97,7 @@ void studup(studmod& x){
                 break;
             case 6:
             cout<<"\n-------------------------------------------------";
-                cout<<"\nGoing back to Menu..";
+                cout<<"Going back to Menu..";
                 break;
             default:
                 cout<<"Wrong input..";
