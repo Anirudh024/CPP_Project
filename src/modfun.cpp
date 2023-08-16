@@ -28,7 +28,7 @@ void modup(mod& y){
     string n,ttd;
 
     while(chk!=5){ 
-    cout<<"\nTo refresh screen press a number: ";
+    cout<<"\nTo refresh screen press a value key: ";
     cin>>stop;
     if(stop)
     system("cls");

@@ -23,7 +23,7 @@ int main(){
     mod y;
 
     while(chk!=0){ 
-    cout<<"\nTo refresh screen press a number: ";
+    cout<<"\nTo refresh screen press a value key: ";
     cin>>stop;
     if(stop)
     system("cls");
