@@ -7,6 +7,8 @@
         "xlocale": "cpp",
         "xlocnum": "cpp",
         "xtree": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "iosfwd": "cpp",
+        "fstream": "cpp"
     }
 }

@@ -33,7 +33,7 @@ class mod{
         return fees;
     }
 
-    string getTargetAudience() const {
+    string getttd() const {
         return ttd;
     }
 

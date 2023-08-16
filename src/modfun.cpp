@@ -84,7 +84,7 @@ void modup(mod& y){
                 break;
             case 5:
             cout<<"\n-------------------------------------------------";
-                cout<<"Going back to Menu..";
+                cout<<"\nGoing back to Menu..";
                 break;
             default:
                 cout<<"Wrong input..";
